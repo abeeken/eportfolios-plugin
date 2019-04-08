@@ -31,4 +31,5 @@
 
     // == Frontend Functions
     include(dirname( __FILE__ ) .'/signoff.php');
+    include(dirname( __FILE__ ) .'/signoff_grid.php');
 ?>
