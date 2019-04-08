@@ -32,4 +32,7 @@
     // == Frontend Functions
     include(dirname( __FILE__ ) .'/signoff.php');
     include(dirname( __FILE__ ) .'/signoff_grid.php');
+
+    // == CFE Hooks
+    include(dirname( __FILE__ ) .'/cfe_hooks.php');
 ?>
