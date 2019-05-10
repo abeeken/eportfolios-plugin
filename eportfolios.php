@@ -28,6 +28,8 @@
     include(dirname( __FILE__ ) .'/admin/ep_admin_coursetypes.php');
     include(dirname( __FILE__ ) .'/admin/ep_admin_custom_meta.php');
     include(dirname( __FILE__ ) .'/admin/ep_signatures.php');
+    include(dirname( __FILE__ ) .'/admin/ep_admin_messages.php');
+    include(dirname( __FILE__ ) .'/admin/ep_statustypes.php');
 
     // == Frontend Functions
     include(dirname( __FILE__ ) .'/signoff.php');
@@ -35,4 +37,7 @@
 
     // == CFE Hooks
     include(dirname( __FILE__ ) .'/cfe_hooks.php');
+
+    // == Widgets
+    include(dirname( __FILE__ ) .'/widgets/portfolio_status.php');
 ?>

@@ -21,12 +21,7 @@
 
         // Default values - these should all be stored in thingtype values and decoded out here unless they are standard       
         $coursetypes = json_decode(get_option('coursetypes'), TRUE);
-        $portfolio_status = array(
-            "open",
-            "submitted",
-            "marked",
-            "resit"
-        );
+        $portfolio_status = get_statustypes();
         $usertypes = json_decode(get_option('usertypes'), TRUE);
 
         // Current values
