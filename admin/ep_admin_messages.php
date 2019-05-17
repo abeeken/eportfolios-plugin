@@ -25,20 +25,23 @@
                 $typelist = "";
                 ?>
                 <form method="post" action="options.php">
-                    <?php wp_nonce_field('update-options') ?>
+                    <?php wp_nonce_field('update-options');
+                    $currentmessage = get_option("message_status_default"); ?>
+                    <p>Default text (this will show if any of the fields below are blank):</p>
+                    <textarea rows="6" cols="30" name="message_status_default"><?php echo $currentmessage; ?></textarea>                     
                 <?php
                     foreach($statustypes as $statustype){
                         $currentmessage = get_option("message_status_".$statustype);
                         ?>
                         <p><?php echo $statustype; ?>:</p>
-                        <textarea name="message_status_<?php echo $statustype; ?>"><?php echo $currentmessage; ?></textarea>
+                        <textarea rows="6" cols="30" name="message_status_<?php echo $statustype; ?>"><?php echo $currentmessage; ?></textarea>
                         <?php
                         $typelist .= "message_status_".$statustype.",";
                     }
                     rtrim($typelist,",");?>
                     <p><input type="submit" name="Submit" value="Save Options" /></p>
                     <input type="hidden" name="action" value="update" />
-                    <input type="hidden" name="page_options" value="<?php echo $typelist; ?>" />
+                    <input type="hidden" name="page_options" value="message_status_default,<?php echo $typelist; ?>" />
                 </form>
         </div>
         <?php 

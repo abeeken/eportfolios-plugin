@@ -20,6 +20,9 @@
             $title = apply_filters( 'widget_title', $instance['title'] );
             $status = get_option('status');
             $statusmessage = get_option('message_status_'.$status);
+            if($statusmessage == ""){
+                $statusmessage = get_option('message_status_default');
+            }
 
             // before and after widget arguments are defined by themes
             echo $args['before_widget'];
