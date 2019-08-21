@@ -17,9 +17,12 @@
 	Widgets
 	
     */
+
+    // == Scripts and Styles
+    include(dirname( __FILE__ ) .'/fns/scripts.php');
     
     // == General Functions
-    include(dirname( __FILE__ ) .'/functions.php');
+    include(dirname( __FILE__ ) .'/fns/functions.php');
 
     // == Admin Functions
     include(dirname( __FILE__ ) .'/admin/ep_admin.php');
@@ -32,11 +35,11 @@
     include(dirname( __FILE__ ) .'/admin/ep_statustypes.php');
 
     // == Frontend Functions
-    include(dirname( __FILE__ ) .'/signoff.php');
-    include(dirname( __FILE__ ) .'/signoff_grid.php');
+    include(dirname( __FILE__ ) .'/fns/signoff.php');
+    include(dirname( __FILE__ ) .'/fns/signoff_grid.php');
 
     // == CFE Hooks
-    include(dirname( __FILE__ ) .'/cfe_hooks.php');
+    include(dirname( __FILE__ ) .'/fns/cfe_hooks.php');
 
     // == Widgets
     include(dirname( __FILE__ ) .'/widgets/portfolio_status.php');
