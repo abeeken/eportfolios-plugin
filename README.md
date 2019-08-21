@@ -32,6 +32,12 @@ Use the shortcode \[signoff_grid] to set the page to display a sign off grid and
 
 Some pages may require forms adding for users to complete. This can be done by installing and activating the 'Custom Form Editor' plugin which has hooks that are used by the EPortfolio plugin to provide extra functionality.
 
+## Widgets
+
+### Portfolio Status
+
+A widget that allows custom messages and links to be assigned to different portfolio statuses to create different tiers of submission for the users.
+
 ## Maintenance
 
 ### Portfolio status
