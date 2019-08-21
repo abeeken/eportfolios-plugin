@@ -19,7 +19,7 @@
     */
 
     // == Scripts and Styles
-    include(dirname( __FILE__ ) .'/fns/scripts.php');
+    include(dirname( __FILE__ ) .'/scripts.php');
     
     // == General Functions
     include(dirname( __FILE__ ) .'/fns/functions.php');
