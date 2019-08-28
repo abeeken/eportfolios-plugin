@@ -1,3 +1,18 @@
 #signoff_grid td{
     text-align: center;
 }
+
+#signoff_grid td.na{
+    background: #ccc;
+    color: #404040;
+}
+
+#signoff_grid td.n{
+    background: #fbdcd9;
+    color: #ea4737;
+}
+
+#signoff_grid td.y{
+    background: #c8ecc0;
+    color: #79ae6d;
+}

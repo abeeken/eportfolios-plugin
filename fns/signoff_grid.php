@@ -73,7 +73,7 @@
         foreach($grid as $row){
             $output .= "        <tr>";
             foreach($row as $element){
-                $output .= "        <td>".$element."</td>";
+                $output .= "        <td class='".strtolower(str_replace("/","",$element))."'>".$element."</td>";
             }
             $output .= "        </tr>";
         }

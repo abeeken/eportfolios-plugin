@@ -17,30 +17,32 @@
     
         // Frontend
         public function widget( $args, $instance ) {
-            $title = apply_filters( 'widget_title', $instance['title'] );
-            $status = get_option('status');
-            $statusmessage = $instance[ 'message_status_'.$status ];
-            $statuslink = $instance[ 'link_status_'.$status ];
-            $statuslinktext = $instance[ 'linktext_status_'.$status ];
-            if($statusmessage == ""){
-                $statusmessage = $instance[ 'message_status_default' ];
-            }
+            if(is_user_logged_in()){
+                $title = apply_filters( 'widget_title', $instance['title'] );
+                $status = get_option('status');
+                $statusmessage = $instance[ 'message_status_'.$status ];
+                $statuslink = $instance[ 'link_status_'.$status ];
+                $statuslinktext = $instance[ 'linktext_status_'.$status ];
+                if($statusmessage == ""){
+                    $statusmessage = $instance[ 'message_status_default' ];
+                }
 
-            // before and after widget arguments are defined by themes
-            echo $args['before_widget'];
-            if ( ! empty( $title ) )
-            echo $args['before_title'] . $title . $args['after_title'];
-            
-            // This is where you run the code and display the output
-            // Get status
-            // If status = x then do y
-            // - Set status messages in back end
+                // before and after widget arguments are defined by themes
+                echo $args['before_widget'];
+                if ( ! empty( $title ) )
+                echo $args['before_title'] . $title . $args['after_title'];
+                
+                // This is where you run the code and display the output
+                // Get status
+                // If status = x then do y
+                // - Set status messages in back end
 
-            echo __( "<p>".$statusmessage."</p>", 'ep_widget' );
-            if($statuslink != ""){
-                echo __( "<p><a href='".$statuslink."'>".$statuslinktext."</a></p>", 'ep_widget' );
+                echo __( "<p>".$statusmessage."</p>", 'ep_widget' );
+                if($statuslink != ""){
+                    echo __( "<p><a href='".$statuslink."'>".$statuslinktext."</a></p>", 'ep_widget' );
+                }
+                echo $args['after_widget'];
             }
-            echo $args['after_widget'];
         }
             
         // Backend 
