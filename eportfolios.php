@@ -43,4 +43,5 @@
 
     // == Widgets
     include(dirname( __FILE__ ) .'/widgets/portfolio_status.php');
+    include(dirname( __FILE__ ) .'/widgets/portfolio_usertype_message.php');
 ?>
