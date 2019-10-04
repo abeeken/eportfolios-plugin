@@ -2,6 +2,8 @@
 
 ## Work in progress!
 
+This plugin is not currently available on my public GitHub account!
+
 This plugin is a work-in-progress application which takes the work done on the University of Lincoln ePortfolio project and builds it into a theme independent plugin. For best results, use with the Custom Field Editor!
 
 ## Setup
