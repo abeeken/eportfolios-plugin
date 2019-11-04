@@ -44,6 +44,10 @@ Some pages may require forms adding for users to complete. This can be done by i
 
 A widget that allows custom messages and links to be assigned to different portfolio statuses to create different tiers of submission for the users.
 
+### Usertype Message
+
+Allows the adding of widgets to display messages to specific usertypes when they are logged in.
+
 ## Maintenance
 
 ### Portfolio status
