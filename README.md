@@ -2,7 +2,9 @@
 
 ## Work in progress!
 
-This plugin is a work-in-progress application which takes the work done on the University of Lincoln ePortfolio project and builds it into a theme independent plugin. For best results, use with the Custom Field Editor!
+This plugin is a work-in-progress application which takes the work done on the University of Lincoln ePortfolio project and builds it into a theme independent plugin. For best results, use with the Custom Field Editor (https://github.com/abeeken/custom-field-editor)!
+
+If anyone wants to help contribute to this project, please drop me a line!
 
 ## Setup
 
